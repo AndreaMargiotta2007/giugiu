@@ -6,6 +6,17 @@
     <title>Giulia</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script>
+  function openLightbox(src) {
+      document.getElementById("lightbox-img").src = src;
+      document.getElementById("lightbox").style.display = "block";
+  }
+  
+  function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+  }
+  </script>
+  
 <body>
     <div class="title">
         <h1>
@@ -17,46 +28,73 @@
         
         <a href="index.html">Home</a>
         <a class="active" href="foto.html">Foto</a>
-        <a href="#contact">Video</a>
-        <a href="#about">Dedica</a>
+        <a href="video.html">Video</a>
+        <a href="dedica.html">Dedica</a>
     </div>
 
-    <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="immagini/aia.jpg">
-            <img src="immagini/aia.jpg" alt="me so fatto male">
+    <ul class="timeline">
+      <li>
+          <a href="#" onclick="openLightbox('immagini/aia.jpg')">
+              <span>07/03/2023</span> – Meglio ridere per queste cose...
           </a>
-          <div class="desc">Qui mi sono fatto male...</div>
-        </div>
-      </div>
-      
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="img_forest.jpg">
-            <img src="img_forest.jpg" alt="Forest">
+      </li>
+      <li>
+          <a href="#" onclick="openLightbox('immagini/fuochi.jpg')">
+              <span>15/08/2023</span> – Fuochi d'artificio e bacioooone 🎆
           </a>
-          <div class="desc">Add a description of the image here</div>
-        </div>
-      </div>
-      
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="img_lights.jpg">
-            <img src="img_lights.jpg" alt="Northern Lights">
+      </li>
+      <li>
+          <a href="#" onclick="openLightbox('immagini/seri.jpg')">
+              <span>15/08/2023</span> – Serissimi!
           </a>
-          <div class="desc">Add a description of the image here</div>
-        </div>
-      </div>
-      
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="img_mountains.jpg">
-            <img src="img_mountains.jpg" alt="Mountains">
+      </li>
+      <li>
+          <a href="#" onclick="openLightbox('immagini/seneva.jpg')">
+              <span>15/08/2023</span> – Dove vai????
           </a>
-          <div class="desc">Add a description of the image here</div>
-        </div>
-      </div>
+      </li>
+      <li>
+          <a href="#" onclick="openLightbox('immagini/ritorno_gita.jpg')">
+              <span>15/08/2023</span> – Ritorno tanto atteso.
+          </a>
+     </li>
+     <li>
+          <a href="#" onclick="openLightbox('immagini/pipo_giulia.jpg')">
+              <span>15/08/2023</span> – Giulia...
+          </a>
+      </li>
+      <li>
+        <a href="#" onclick="openLightbox('immagini/pazzi.jpg')">
+            <span>15/08/2023</span> – Momento selfie!
+        </a>
+    </li>
+    <li>
+      <a href="#" onclick="openLightbox('immagini/patate.jpg')">
+          <span>15/08/2023</span> – Qui avevi fame solo te...
+      </a>
+  </li>
+  <li>
+    <a href="#" onclick="openLightbox('immagini/aiuto.jpg')">
+        <span>15/08/2023</span> – AOOOO AIUTO!
+    </a>
+</li>
+  </ul>
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+</div>  
+    
+    
       
-      <div class="clearfix"></div>
+      
+      
+      
+      
+      <div class="clearfix">
+
+
+      </div>
+
+
 </body>
 </html>
