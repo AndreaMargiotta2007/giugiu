@@ -6,27 +6,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <title>Giulia</title>
     <link rel="stylesheet" href="style.css">
-    
+    <script src="script.js"></script>
 </head>
-
 <body>
     
     <div class="title">
             <h1>
-                <span>BUON COMPLEANNO AMORE</span> 
+                <span>🌹BUON COMPLEANNO AMORE🌹</span> 
             </h1>
     </div>
         
     <div class="topnav">
         
         <a class="active" href="index.html">Home</a>
-        <a href="foto.html">Foto</a>
-        <a href="video.html">Video</a>
-        <a href="dedica.html">Dedica</a>
+        <a href="foto.html">Galleria</a>
+        <a href="dedica.html" onclick="checkPassword(event)">Dedica</a>
     </div>
-
-    <div class="presentazione">
-            <p>
+    <div id="passwordModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2>Inserisci la chiave per accedere</h2>
+          <input type="password" id="passwordInput" placeholder="Chiave..." />
+          <button onclick="submitPassword()">Entra</button>
+          <p id="errorMsg" style="color:red; display:none;">Chiave errata!</p>
+        </div>
+      </div>
+      
+    <div class="dedica-container">
+        <p class="presentazione">
                 Ciao amore, innanzitutto buon compleanno SONO 17!<br>
                 Spero che lo stai vedendo a casa da sola 
                 (e rilassata soprattutto che sennò non te lo godi...).<br>
@@ -49,9 +56,6 @@
                 <p>Che sicuramente qui stavi all'apice della tua felicità.</p>
             </center>
         </details>
-    </div>
-    <div>
-
     </div>
 
         

@@ -1,9 +1,9 @@
 body{
   background: linear-gradient(to right, #ffe4e1, #fff0f5); /* tonalità rosa pastello */
     color: #333;
-  font-family: 'Dancing Script';
 }
 .presentazione{
+  font-family: sans-serif;;
   text-align: center;
   color: black;
 }
@@ -185,4 +185,83 @@ body{
 .timeline a {
   text-decoration: none;
   color: inherit; /* opzionale: mantiene il colore del testo normale */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+   background: radial-gradient(circle at 30% 30%, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+   color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  font-family: sans-serif;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.modal-content input {
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #0056b3;
+}
+
+.close {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.dedica-container {
+  max-width: 700px;
+  margin: 50px auto;
+  background-color: #fff0f5;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  font-family: 'Dancing Script', cursive;
+  font-size: 22px;
+  color: #4b2e2e;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.dedica-img {
+  margin-top: 20px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.firma {
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
 }

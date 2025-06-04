@@ -5,42 +5,43 @@
     <meta meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Giulia</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<script>
-  function openLightbox(src) {
-      document.getElementById("lightbox-img").src = src;
-      document.getElementById("lightbox").style.display = "block";
-  }
-  
-  function closeLightbox() {
-      document.getElementById("lightbox").style.display = "none";
-  }
-  </script>
   
 <body>
     <div class="title">
         <h1>
-                <a>BUON COMPLEANNO AMORE</a> 
+                <a>🌹LA GALLERONAAA🌹
+                </a> 
             </h1>
     </div>
         
     <div class="topnav">
         
         <a href="index.html">Home</a>
-        <a class="active" href="foto.html">Foto</a>
-        <a href="video.html">Video</a>
-        <a href="dedica.html">Dedica</a>
+        <a class="active" href="foto.html">Galleria</a>
+        <a href="dedica.html" onclick="checkPassword(event)">Dedica</a>
     </div>
 
+    <div id="passwordModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2>Inserisci la chiave per accedere</h2>
+          <input type="password" id="passwordInput" placeholder="Chiave..." />
+          <button onclick="submitPassword()">Entra</button>
+          <p id="errorMsg" style="color:red; display:none;">Chiave errata!</p>
+        </div>
+      </div>
+      
     <ul class="timeline">
       <li>
           <a href="#" onclick="openLightbox('immagini/aia.jpg')">
-              <span>07/03/2023</span> – Meglio ridere per queste cose...
+              <span>09/10/2023</span> – Meglio ridere per queste cose...
           </a>
       </li>
       <li>
           <a href="#" onclick="openLightbox('immagini/fuochi.jpg')">
-              <span>15/08/2023</span> – Fuochi d'artificio e bacioooone 🎆
+              <span>11/08/2023</span> – Fuochi d'artificio e bacioooone 🎆
           </a>
       </li>
       <li>
@@ -60,22 +61,87 @@
      </li>
      <li>
           <a href="#" onclick="openLightbox('immagini/pipo_giulia.jpg')">
-              <span>15/08/2023</span> – Giulia...
+              <span>31/07/2023</span> – Giulia...
           </a>
       </li>
       <li>
         <a href="#" onclick="openLightbox('immagini/pazzi.jpg')">
-            <span>15/08/2023</span> – Momento selfie!
+            <span>11/08/2023</span> – Momento selfie!
         </a>
     </li>
     <li>
       <a href="#" onclick="openLightbox('immagini/patate.jpg')">
-          <span>15/08/2023</span> – Qui avevi fame solo te...
+          <span>28/12/2024</span> – Qui avevi fame solo te...
       </a>
   </li>
   <li>
     <a href="#" onclick="openLightbox('immagini/aiuto.jpg')">
-        <span>15/08/2023</span> – AOOOO AIUTO!
+        <span>28/04/2024</span> – AOOOO AIUTO!
+    </a>
+</li>
+<li>
+    <a href="#" onclick="openLightbox('immagini/stupida.jpg')">
+        <span>11/02/2024</span> – Apasdkamalsdskdn.
+    </a>
+</li>
+<li>
+    <a href="#" onclick="openLightbox('immagini/cicamala.jpg')">
+        <span>08/05/2024</span> – Tié.
+    </a>
+</li>
+<li>
+    <a href="#" onclick="openLightbox('immagini/sushi.jpg')">
+        <span>14/02/2025</span> – Sushiooone.
+    </a>
+</li>
+<li>
+    <a href="#" onclick="openLightbox('immagini/lefaccio.jpg')">
+        <span>14/07/2025</span> – Poi dici che non faccio le cose.
+    </a>
+</li>
+<li>
+    <a href="#" onclick="openLightbox('immagini/amaree.jpg')">
+        <span>04/08/2024</span> – Bagnetto?
+    </a>
+</li>
+<li>
+    <a href="#" onclick="openLightbox('immagini/twuerk.jpg')">
+        <span>10/08/2024</span> – Twerkkkk.
+    </a>
+</li>
+<li>
+    <a href="#" onclick="openLightbox('immagini/chebellichesiamo.jpg')">
+        <span>10/08/2024</span> – Che bellini che siamo...
+    </a>
+</li>
+<li>
+    <a href="#" onclick="openLightbox('immagini/fattelecca.jpg')">
+        <span>14/08/2024</span> – Fatte leccare...
+    </a>
+</li>
+<li>
+    <a href="#" onclick="openLightbox('immagini/compagnia.jpg')">
+        <span>14/08/2024</span> – Sei di compagnia eh.
+    </a>
+</li>
+<li>
+    <a href="#" onclick="openLightbox('immagini/cheteguardi.jpg')">
+        <span>1/09/2024</span> – Che te guardi?!
+    </a>
+</li>
+<li>
+    <a href="#" onclick="openLightbox('immagini/cissssss.jpg')">
+        <span>15/09/2024</span> – Sorridi!!!
+    </a>
+</li>
+<li>
+    <a href="#" onclick="openLightbox('immagini/cavalli.jpg')">
+        <span>3/11/2024</span> – I cavalli o la cavalla?
+    </a>
+</li>
+<li>
+    <a href="#" onclick="openLightbox('immagini/booo.jpg')">
+        <span>24/10/2024</span> – BOOOOOO.
     </a>
 </li>
   </ul>
